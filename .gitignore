@@ -5,3 +5,4 @@ functions
 .firebase
 .vscode
 dist
+.DS_Store
