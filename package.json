@@ -1,0 +1,22 @@
+{
+	"name": "immerse",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev --experimental-ssr",
+		"start": "astro dev --experimental-ssr",
+		"build": "astro build --experimental-ssr"
+	},
+	"type": "module",
+	"dependencies": {
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0",
+		"sass": "^1.51.0"
+	},
+	"devDependencies": {
+		"@astrojs/react": "^0.1.1",
+		"astro": "^1.0.0-beta.31",
+		"eslint": "^8.15.0",
+		"eslint-plugin-jsdoc": "^39.2.9"
+	}
+}

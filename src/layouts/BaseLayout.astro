@@ -1,0 +1,22 @@
+---
+import Footer from '../components/Footer.jsx';
+---
+
+<html>
+  <head>
+    <meta charSet='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <title>
+      Test
+    </title>
+    <meta name='description' content='Test' />
+  </head>
+  <body>
+    <div class='content-wrapper'>
+      <main>
+        <slot />
+      </main>
+    </div>
+    <Footer client:load />
+  </body>
+</html>

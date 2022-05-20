@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "functions/client",
+    "rewrites": [
+      {
+        "source": "/",
+        "function": "handler"
+      }
+    ]
+  }
+}
