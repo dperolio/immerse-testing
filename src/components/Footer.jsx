@@ -1,13 +1,15 @@
 import React from 'react';
-import Button from './Button.jsx';
 
-export default function Footer () {
-  return (
-    <footer className='footer'>
-      <p className='footer-copyright'>
-        Footer
-        <Button></Button>
-      </p>
-    </footer>
-  );
+export default function Footer() {
+	const year = new Date().getFullYear();
+
+	return (
+		<footer className='footer'>
+			<p className='footer-copyright'>
+				<small>
+					© {year} Immerse The Nations
+				</small>
+			</p>
+		</footer>
+	);
 }

@@ -1,19 +1,17 @@
 ---
-import Footer from '../components/Footer.jsx';
+import { BaseHead, Header, Footer } from '../components';
+
+const { title, description } = Astro.props;
 ---
 
 <html>
   <head>
-    <meta charSet='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1' />
-    <title>
-      Test
-    </title>
-    <meta name='description' content='Test' />
+    <BaseHead title={title} description={description} />
   </head>
   <body>
     <div class='content-wrapper'>
-      <main>
+      <Header client:load />
+      <main class='content'>
         <slot />
       </main>
     </div>
